@@ -26,7 +26,7 @@ SECRET_KEY = '3am8jw)55fr^anvltel89q=@*u&2hi0ie8h^hy_bsa@ogiz8i7'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://musician-hall.herokuapp.com/', 'http://127.0.0.1:8000/']
+ALLOWED_HOSTS = ['https://musician-hall.herokuapp.com/', 'http://127.0.0.1:8000/',]
 
 
 # Application definition
@@ -129,7 +129,9 @@ MEDIA_URL = '/images/'
 #     os.path.join(BASE_DIR, 'static')
 # ]
 
-PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
-STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
+# PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+# STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 django_heroku.settings(locals())
