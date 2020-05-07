@@ -32,14 +32,15 @@ ALLOWED_HOSTS = ['https://musician-hall.herokuapp.com/', 'http://127.0.0.1:8000/
 # Application definition
 
 INSTALLED_APPS = [
+    'violinist.apps.ViolinistConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    # 'django.contrib.staticfiles',
+    'django.contrib.staticfiles',
 
-    'violinist.apps.ViolinistConfig'
+    
 ]
 
 MIDDLEWARE = [
